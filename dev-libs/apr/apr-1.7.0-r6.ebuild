@@ -112,7 +112,7 @@ src_configure() {
 			;;
 		esac
 	else
-		if use ppc || use sparc || use mips; then
+		if use ppc || use sparc || use mips || use x86; then
 			# Avoid libapr containing undefined references (underlinked)
 			# undefined reference to `__sync_val_compare_and_swap_8'
 			# (May be possible to fix via libatomic linkage in future?)
